@@ -1,0 +1,53 @@
+.landing-page {
+  height: 100vh;
+  background-image: url("./beach.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.landing-page-shadow {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.landing-page-shadow .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 55%;
+  align-items: flex-start;
+}
+
+.landing-page h1,
+.landing-page p {
+  width: 80%;
+}
+
+.landing-page-btn {
+  border: 3px solid #fff;
+  padding: 8px 30px;
+  width: auto;
+  transition: 1s all;
+}
+
+.landing-page-btn:hover {
+  background-color: #fff;
+  color: #000000;
+}
+
+@media (min-width: 768px) {
+  .landing-page-shadow .container {
+    height: 38%;
+  }
+
+  .landing-page h1,
+  .landing-page p {
+    width: 60%;
+  }
+}
